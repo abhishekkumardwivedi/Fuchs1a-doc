@@ -1,19 +1,19 @@
 # FuchsiaOS
 
 ## Fuchsia building blocks
-Fuchsia stack
+* Fuchsia stack
 
-Zircon microkernel
+* Zircon microkernel
 
-Dart VM
+* Dart VM
 
-Flutter Application framework
+* Flutter Application framework
 
-Rust programming
+* Rust programming
 
-GN meta build system
+* GN meta build system
 
-FIDL
+* FIDL
 
 ## Fuchsia OS stack
 Zircon
