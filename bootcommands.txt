@@ -1,0 +1,7 @@
+#fx run
+
+ exec /home/abhishek/workspace-common/fuchsia/fuchsia/prebuilt/third_party/qemu/linux-x64/bin/qemu-system-x86_64 -kernel /home/abhishek/workspace-common/fuchsia/fuchsia/out/default/../default.zircon/multiboot.bin -initrd /home/abhishek/workspace-common/fuchsia/fuchsia/out/default/tmp.a9M/fuchsia-ssh.zbi -m 2048 -nographic -drive file=/home/abhishek/workspace-common/fuchsia/fuchsia/out/default/tmp.a9M/fvm.blk,format=raw,if=none,id=mydisk -device ich9-ahci,id=ahci -device ide-drive,drive=mydisk,bus=ahci.0 -nic none -smp 4,threads=2 -machine q35 -device isa-debug-exit,iobase=0xf4,iosize=0x04 -cpu Haswell,+smap,-check,-fsgsbase -append 'TERM=xterm-256color kernel.serial=legacy kernel.entropy-mixin=8a84dad6a3cc24362c07b1a89c0cc961beaaa53b2ca98faabfb094bd4e135240 kernel.halt-on-panic=true '
+ 
+ #fx run -g
+ 
+ 
